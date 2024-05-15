@@ -1,0 +1,102 @@
+Started by an SCM change
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Jenkinsjob2
+The recommended git tool is: NONE
+using credential Jenkinstest2
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/Jenkinsjob2/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/naveensrepo0120/Jenkinstest2.git # timeout=10
+Fetching upstream changes from https://github.com/naveensrepo0120/Jenkinstest2.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+using GIT_ASKPASS to set credentials Gitoken
+ > git fetch --tags --force --progress -- https://github.com/naveensrepo0120/Jenkinstest2.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/main^{commit} # timeout=10
+Checking out Revision c91d5097730b0c23efee7c811a32097745578dfe (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c91d5097730b0c23efee7c811a32097745578dfe # timeout=10
+Commit message: "Update index.html"
+ > git rev-list --no-walk 602cb69e44366b917672c16f6b63b7e2eb2d14d2 # timeout=10
+No emails were triggered.
+[Jenkinsjob2] $ /bin/sh -xe /tmp/jenkins17422675501839822940.sh
++ ls
+index.html
++ cat index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined HTML Examples</title>
+</head>
+<body>
+    <!-- Basic HTML Structure -->
+    <h1>Welcome to My Combined HTML Page</h1>
+    <p>This page combines various HTML elements for demonstration purposes.</p>
+
+    <!-- Links and Images -->
+    <h2>Links and Images</h2>
+    <p>Visit <a href="https://www.example.com">Example</a> for more information.</p>
+    <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+
+    <!-- Lists -->
+    <h2>Lists</h2>
+    <h3>Shopping List</h3>
+    <ul>
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Cherries</li>
+    </ul>
+    <h3>Task List</h3>
+    <ol>
+        <li>Finish homework</li>
+        <li>Clean the house</li>
+        <li>Buy groceries</li>
+    </ol>
+
+    <!-- Tables -->
+    <h2>Tables</h2>
+    <h3>Student Grades</h3>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>B</td>
+        </tr>
+    </table>
+
+    <!-- Forms -->
+    <h2>Forms</h2>
+    <h3>Contact Us</h3>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Div and Span -->
+    <h2>Div and Span</h2>
+    <div>
+        <h3>This is a div container</h3>
+        <p>The div element is a block-level container.</p>
+    </div>
+    <p>This is a <span style="color: blue;">span element</span> inside a paragraph.</p>
+</body>
+</html>
+Email was triggered for: Success
+Sending email for trigger: Success
+ERROR: Error accessing files to attach: Expecting Ant GLOB pattern, but saw '/bin/sh -xe /tmp/jenkins6434049584056298086.sh'. See https://ant.apache.org/manual/Types/fileset.html for syntax
+Sending email to: bnbmr123@gmail.com
+Finished: SUCCESS
